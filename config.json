@@ -1,0 +1,8 @@
+{
+  "configuration": {
+    "auto_install_updates": false,
+    "image_processing_flipped": true,
+    "images_mode": 2,
+    "metrics_enabled": false
+  }
+}

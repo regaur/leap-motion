@@ -1,0 +1,10 @@
+pre_install () {
+  groupadd -r plugdev || true
+  gpasswd -a auto-login plugdev || true
+  gpasswd -a local-admin plugdev || true
+}
+
+post_install () {
+  systemctl enable leapd
+}
+
