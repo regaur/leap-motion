@@ -1,0 +1,12 @@
+[Unit]
+Description=Leap Motion Service Daemon
+
+[Service]
+PIDFile=/var/run/leapd.pid
+ExecStart=/usr/bin/leapd --head_mounted_display_mode
+KillSignal=SIGKILL
+TimeoutStopSec=5
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

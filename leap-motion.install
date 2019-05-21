@@ -5,6 +5,8 @@ pre_install () {
 }
 
 post_install () {
+  # overwrite original service file
+  cp "/var/.Leap Motion/leapd.service" /usr/lib/systemd/system
   systemctl enable leapd
 }
 
