@@ -7,6 +7,8 @@ ExecStart=/usr/bin/leapd --head_mounted_display_mode
 KillSignal=SIGKILL
 TimeoutStopSec=5
 KillMode=process
+RestartSec=3
+Restart=always
 
 [Install]
 WantedBy=multi-user.target

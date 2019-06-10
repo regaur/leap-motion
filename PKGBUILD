@@ -1,7 +1,7 @@
 # Maintainer: Jan Boelsche <jan@lagomorph.de>
 
 pkgname='leap-motion'
-pkgver=1.1
+pkgver=1.2
 pkgrel=1
 pkgdesc='Add auto-login and local-admin to plugdev group, configure leapd'
 packager='Jan Boelsche'
@@ -23,7 +23,7 @@ source=(
 )
 
 sha256sums=('9e8077591c058f5564d40a4e4cdb8cdc0dbc62cf473bafcb2bb3b58cb1ab0a9e'
-            '949fe9e0e65366a80cb4e22676e96e3886090db9486f9444cdfdc7da9ff9a385')
+            'c63904945e2a6b97b021034030d085df49a9214d4d9565548887396db7e58907')
 
 package() {
   install -Dm 644 -t "${pkgdir}/var/.Leap Motion" config.json
